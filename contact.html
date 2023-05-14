@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+        integrity="sha512-kHUKImNBR9mcwQ1u4RILtsiJmC6u539bgkRapfGrbwXbkPxfapkzAXvdGnrTu3blGNXHPCX0klrlE7zAZhr+jA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .bg-light {
+            background-color: transparent !important;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+        }
+
+        .carousel-caption {
+            bottom: 220px;
+        }
+
+        .carousel-caption h5 {
+            font-size: 45px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+        }
+
+        .carousel-caption p {
+            width: 60%;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        .carousel-caption a {
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: rgb(223, 137, 254);
+            font-size: 10px;
+            border-radius: 30px;
+            padding: 10px 30px;
+            display: inline-block;
+
+            color: rgb(43, 4, 69);
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .carousel-caption a:hover {
+            color: rgb(199, 121, 252);
+            background-color: rgb(27, 4, 35);
+        }
+
+        @media only screen and (max-width:767px) {
+            .navbar-nav {
+                text-align: center;
+                color: #000;
+                background: rgba(0, 0, 0, 0.2);
+            }
+
+            .carousel-caption {
+                bottom: 150px;
+                /* text-align: center; */
+            }
+
+            .carousel-caption h5 {
+                font-size: 17px;
+                /* color: #000; */
+            }
+
+            .carousel-caption p {
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+        }
+
+
+        .navbar-nav a {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .navbar-left .navbar-brand {
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .navbar-left .navbar-brand:focus,
+        .navbar-left .navbar-brand:hover {
+            color: #fff;
+
+        }
+
+        .navbar-left .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-left .navbar-nav .nav-link:focus,
+        .navbar-left .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+
+        .w-100 {
+            height: 100vh;
+        }
+
+        .navbar-toggler {
+            padding: 1px 5px;
+            font-size: 18px;
+            line-height: 0.3;
+            background: #fff;
+        }
+
+        .navbar{
+            background-color: rgb(64, 7, 125);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #27063e;
+            /* background-image: url("contactimg.jpg"); */
+        }
+
+        .cont1 {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; */
+            /* width: 40%; */
+            margin-top:  10px;
+            border-radius: 10px;
+            /* background-color: red; */
+        }
+
+        label {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 5px;
+            margin: 15px 5px;
+            color: rgb(199, 121, 252);
+        }
+
+        option {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        ::placeholder{
+            color: #fff;
+        }
+        input {
+            font-size: 17px;
+            border: 2px solid white;
+            margin: 5px 5px;
+            border-radius: 6px;
+            background-color: rgb(115, 54, 220);
+        }
+
+        textarea {
+            font-size: 17px;
+            border: 2px solid black;
+            margin: 10px 10px;
+            background-color: rgb(115, 54, 220);
+            border-radius: 6px;
+        }
+
+        select {
+            font-size: 15px;
+            font-weight: bold;
+            /* width: 50%; */
+            border: 2px solid black;
+            background-color: rgb(115, 54, 220);
+            border-radius: 4px;
+            color: #fff;
+        }
+        #testvalue{
+            color: #fff;
+        }
+
+        
+        #bt{
+            margin: 10px;
+            display: block;
+            padding: 10px 12px;
+            background-color: rgb(115, 54, 220);
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+        }
+        #bt:hover{
+            color: white;
+            background-color: rgb(199, 121, 252);
+        }
+    </style>
+    <script>
+        function dd1select() {
+            var d = document.getElementById("ddselect");
+            var disp = d.options[d.selectedIndex].text;
+            document.getElementById("txtvalue").value = disp;
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <img src="logo.png" alt="Error in image" width="60px" height="40px" style="border-radius: 25px; margin: 10px;">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <h1 class="navbar-brand" >Career Guidence</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="page1.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Studies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page3.html">Tutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page5.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page6.html">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page7.html">Others</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact us<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 style="font-size: 30px; color: rgb(236, 236, 236);background-color: #27063e; text-align: center;border: 2px solid rgb(9, 3, 3);margin-bottom: 20px;">
+        Additional Help To Complete 10th Course</h1>
+    <div class="cont1">
+        <form action="connect.php" method="post" id="contact">
+            <div class="cont2">
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <br>
+                <label for="gender">Gender :</label>
+                <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+                <br>
+                <label for="Email">Email :</label>
+                <input type="text" name="Email" id="Email" placeholder="Enter your Email">
+                <br>
+                <label for="Phone">Phone :</label>
+                <input type="text" name="Phone" id="Phone" placeholder="Enter your Phone Number">
+                <br>
+            </div>
+            <textarea name="address" id="address" cols="35" rows="4" placeholder="enter your address"></textarea>
+            <br>
+            <textarea name="more" id="more" cols="35" rows="6" placeholder="Enter More About You"></textarea>
+            <br>
+            <select name="" id="ddselect" onchange="dd1select()">
+                <option value="Streams">Select Required : </option>
+                <option value="SCIENCE">SCIENCE</option>
+                <option value="COMMERCE">COMMERCE</option>
+                <option value="ARTS">ARTS</option>
+                <option value="DIPLOMA">DIPLOMA</option>
+                <option value="SCIENCE">SCIENCE</option>
+                <option value="SOCIAL">SOCIAL</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="CRICKET">CRICKET</option>
+                <option value="KABADDI">KABADDI</option>
+                <option value="FOOTBALL">FOOTBALL</option>
+                <option value="Badminton">Badminton</option>
+                <option value="Archery">Archery</option>
+
+                <option value="FIREMAN">FIREMAN</option>
+                <option value="AMBULANCE DRIVER">AMBULANCE DRIVER</option>
+                <option value="CLERK">CLERK</option>
+                <option value="Male constable">Male constable</option>
+                <option value="Government Jobs">Government Jobs</option>
+                <option value="LIBRARIAN">LIBRARIAN</option>
+                <option value="TAILOR">TAILOR</option>
+                <option value="DAIRY FARMER">DAIRY FARMER</option>
+                <option value="WARD BOY">WARD BOY</option>
+                <option value="WATCHMAN">WATCHMAN</option>
+                <option value="CHEF">CHEF</option>
+                <option value="ART">ART</option>
+                <option value="ACTING">ACTING</option>
+            </select>
+            <input type="text" id="txtvalue" name="option">
+            <br>
+            <button id="bt">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

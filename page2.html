@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+        integrity="sha512-kHUKImNBR9mcwQ1u4RILtsiJmC6u539bgkRapfGrbwXbkPxfapkzAXvdGnrTu3blGNXHPCX0klrlE7zAZhr+jA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .bg-light {
+            background-color: transparent !important;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+        }
+
+        .carousel-caption {
+            bottom: 220px;
+        }
+
+        .carousel-caption h5 {
+            font-size: 45px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+        }
+
+        .carousel-caption p {
+            width: 60%;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        .carousel-caption a {
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: rgb(223, 137, 254);
+            font-size: 10px;
+            border-radius: 30px;
+            padding: 10px 30px;
+            display: inline-block;
+
+            color: rgb(43, 4, 69);
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .carousel-caption a:hover {
+            color: rgb(199, 121, 252);
+            background-color: rgb(27, 4, 35);
+        }
+
+        @media only screen and (max-width:767px) {
+            .navbar-nav {
+                text-align: center;
+                color: #000;
+                background: rgba(0, 0, 0, 0.2);
+            }
+
+            .carousel-caption {
+                bottom: 150px;
+                /* text-align: center; */
+            }
+
+            .carousel-caption h5 {
+                font-size: 17px;
+                /* color: #000; */
+            }
+
+            .carousel-caption p {
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+        }
+
+
+        .navbar-nav a {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .navbar-left .navbar-brand {
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .navbar-left .navbar-brand:focus,
+        .navbar-left .navbar-brand:hover {
+            color: #fff;
+
+        }
+
+        .navbar-left .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-left .navbar-nav .nav-link:focus,
+        .navbar-left .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+
+        .w-100 {
+            height: 100vh;
+        }
+
+        .navbar-toggler {
+            padding: 1px 5px;
+            font-size: 18px;
+            line-height: 0.3;
+            background: #fff;
+        }
+
+        .navbar{
+            background-color: rgb(64, 7, 125);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(1, 2, 19);
+        }
+
+        .cont{
+            /* margin-top: 40%; */
+            /* height:100% ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: rgb(115, 54, 220);
+            border-radius: 3px;
+            color: white;
+            border: 2px solid rgb(15, 1, 1);
+            width: 350px;
+            height: 680px;
+            margin: 10px;
+        }
+
+        .card-image {
+            /* height: 200px; */
+            border-radius: 5px 7px;
+            background-size: cover;
+        }
+        h1 {
+            padding: 4px;
+            text-align: center;
+        }
+
+        p {
+            padding: 2px;
+        }
+
+        button {
+            text-decoration: none;
+            cursor: pointer;
+            list-style: none;
+            color: rgb(43,4,69);
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: rgb(223,137,254);
+            margin-top: 20px;
+            /* margin-left: 110px; */
+            box-shadow: 4px 3px 4px rgb(13, 9, 9);
+            /* display: inline; */
+            /* align-items: center; */
+            /* text-align: center; */
+            /* justify-content: center; */
+        }
+        button:hover{
+            color: rgb(199, 121, 252);
+            background-color: rgb(27, 4, 35);
+        }
+
+        h1:hover{
+            color: rgb(184, 142, 242);
+        }
+        
+        .card:hover {
+            color: rgb(184, 142, 242);
+            background-color: rgb(38, 1, 61);
+            color: white;
+            transform: scale(1.02);
+            transition: all 1s ease;
+        }
+        video{
+            width: 100%;
+            height: 100%;
+        }
+
+        .head{
+            margin-bottom: 60px;
+        }
+    </style>
+    <script>
+        function dd1select() {
+            var d = document.getElementById("ddselect");
+            var disp = d.options[d.selectedIndex].text;
+            document.getElementById("txtvalue").value = disp;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="head">
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <img src="logo.png" alt="Error in image" width="60px" height="40px" style="border-radius: 25px; margin: 10px;">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <h1 class="navbar-brand" >Career Guidence</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="page1.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="page2.html">Studies<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page3.html">Tutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page5.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page6.html">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page7.html">Others</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+    <div class="cont">
+        <div class="card">
+            <div class="card-image img1">
+                <video src="science.mp4" type="video/mp4" loop class="clip1" autoplay loop muted></video>
+            </div>
+            <h1>SCIENCE</h1>
+            <p>Science is a multi-disciplined academic field for students with the following subject combinations in class 12th – PCM (Physics, Chemistry, Mathematics), PCB (Physics, Chemistry, Biology), and PCMB (Physics, Chemistry, Mathematics, Biology). </p>
+            <p>Students looking forward to a career in Science have a wide range of options at both UG (undergraduate) and PG (postgraduate) levels. Students can choose to pursue courses such as BSc (Bachelor of Science), MSc (Master of Science) and PhD (Doctor of Philosophy) in a variety of Science branches/specialisations.</p>
+            <button onclick="window.location.href='science_stream.pdf';"> READ MORE</button>
+        </div>
+        <div class="card">
+            <div class="card-image img2">
+                <video src="ARTS.mp4" type="video/mp4" loop class="clip" autoplay loop muted></video>
+            </div>
+            <h1>ARTS</h1>
+            <p>Art courses comprise a mix of theoretical and practical lessons, with a focus on developing skills in various artistic techniques. Students can learn how to create art using traditional methods like paint, pencils, or charcoal, as well as modern-age digital tools like graphic design .</p>
+            <p>Some popular art courses include Bachelor of Fine Arts (BFA), Bachelor of Visual Arts (BVA), Bachelor of Design (BDes), and Bachelor of Animation. These courses can lead to a wide range of career opportunities and well-paying jobs, such as Graphic Design, Animation, illustration, Game Design, art direction.</p>
+            <button onclick="window.location.href='arts_stream.pdf';">READ MORE</button>
+        </div>
+
+        <div class="card">
+            <div class="card-image img3">
+                <video src="comers.mp4" type="video/mp4" loop class="clip" autoplay loop muted></video>
+            </div>
+            <h1>COMMERCE</h1>
+            <p>The beginning of commerce can be traced back to the early days, from the barter system, the creation of currencies to the setting up of trade routes as well. In today’s time, it denotes all the transactions that are related to the sale or purchase of products and services. </p>
+            <p>Commerce as a discipline involves the study of business activities (like the exchange of goods and services) and trade focuses on accounting as well as financial activities.  Some of the major subjects taught in commerce courses include Accountancy, Economics, and Business Studies. It is a well-structured stream of education</p>
+            <button type="button" onclick="window.location.href='commerce_stream.pdf';">READ MORE</button>
+        </div>
+
+        <div class="card">
+            <div class="card-image img3">
+                <video src="diplomo.mp4" type="video/mp4" loop class="clip" autoplay loop muted></video>
+            </div>
+            <h1>DIPLOMA</h1>
+            <p>Diploma courses are short-term skill-based industrial training courses that are of 1-3 year duration and can be pursued after classes 10 and 12 and also after graduation. Diploma course admission is done either through entrance exams or direct admission. </p>
+            <p>By pursuing diploma courses you can start your professional journey after class 10th and start earning. There are many specializations in diploma courses like design, management, engineering, computer science, media.To crack these entrance exams you must study the diploma courses subjects very well. </p>
+            <button onclick="window.location.href='diploma.pdf';">READ MORE</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

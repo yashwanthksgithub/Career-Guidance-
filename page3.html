@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+        integrity="sha512-kHUKImNBR9mcwQ1u4RILtsiJmC6u539bgkRapfGrbwXbkPxfapkzAXvdGnrTu3blGNXHPCX0klrlE7zAZhr+jA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .bg-light {
+            background-color: transparent !important;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+        }
+
+        .carousel-caption {
+            bottom: 220px;
+        }
+
+        .carousel-caption h5 {
+            font-size: 45px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+        }
+
+        .carousel-caption p {
+            width: 60%;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        .carousel-caption a {
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: rgb(223, 137, 254);
+            font-size: 10px;
+            border-radius: 30px;
+            padding: 10px 30px;
+            display: inline-block;
+
+            color: rgb(43, 4, 69);
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .carousel-caption a:hover {
+            color: rgb(199, 121, 252);
+            background-color: rgb(27, 4, 35);
+        }
+
+        @media only screen and (max-width:767px) {
+            .navbar-nav {
+                text-align: center;
+                color: #000;
+                background: rgba(0, 0, 0, 0.2);
+            }
+
+            .carousel-caption {
+                bottom: 150px;
+                /* text-align: center; */
+            }
+
+            .carousel-caption h5 {
+                font-size: 17px;
+                /* color: #000; */
+            }
+
+            .carousel-caption p {
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+        }
+
+
+        .navbar-nav a {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .navbar-left .navbar-brand {
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .navbar-left .navbar-brand:focus,
+        .navbar-left .navbar-brand:hover {
+            color: #fff;
+
+        }
+
+        .navbar-left .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-left .navbar-nav .nav-link:focus,
+        .navbar-left .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+
+        .w-100 {
+            height: 100vh;
+        }
+
+        .navbar-toggler {
+            padding: 1px 5px;
+            font-size: 18px;
+            line-height: 0.3;
+            background: #fff;
+        }
+
+        .navbar{
+            background-color: rgb(64, 7, 125);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(1, 2, 19);
+        }
+
+        .cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: rgb(115, 54, 220);
+            border-radius: 3px;
+            color: white;
+            border: 2px solid rgb(15, 1, 1);
+            width: 420px;
+            height: 650px;
+            margin: 20px;
+        }
+
+        .card-image {
+            /* height: 200px; */
+            /* margin-bottom: 22px; */
+            border-radius: 5px 7px;
+            background-size: cover;
+        }
+        h1 {
+            padding: 5px;
+            text-align: center;
+        }
+
+        p {
+            padding: 2px;
+        }
+
+        button {
+            text-decoration: none;
+            cursor: pointer;
+            list-style: none;
+            color: rgb(43,4,69);
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: rgb(223,137,254);
+            margin-top: 10px;
+            /* margin-left: 150px; */
+            box-shadow: 4px 3px 4px rgb(13, 9, 9);
+            /* display: inline; */
+            /* align-items: center; */
+            /* text-align: center; */
+            /* justify-content: center; */
+        }
+        button:hover{
+            color: rgb(199, 121, 252);
+            background-color: rgb(27, 4, 35);
+        }
+
+        h1:hover{
+            color: rgb(184, 142, 242);
+        }
+        
+        .card:hover {
+            color: rgb(184, 142, 242);
+            background-color: rgb(38, 1, 61);
+            color: white;
+            transform: scale(1.02);
+            transition: all 1s ease;
+        }
+        video{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script>
+        function dd1select() {
+            var d = document.getElementById("ddselect");
+            var disp = d.options[d.selectedIndex].text;
+            document.getElementById("txtvalue").value = disp;
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <img src="logo.png" alt="Error in image" width="60px" height="40px" style="border-radius: 25px; margin: 10px;">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <h1 class="navbar-brand" >Career Guidence</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="page1.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Studies</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="page3.html">Tutions<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page5.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page6.html">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page7.html">Others</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <h1 style="font-size: 30px; color: rgb(236, 236, 236);background-color: #27063e; text-align: center;border: 2px solid rgb(9, 3, 3);">
+        Additional Help To Complete 10th Course</h1>
+    <h1 style="font-size: 30px; color: rgb(242, 242, 242);background-color: #6f13a0;margin-bottom: 10px; border: 2px solid rgb(13, 10, 10); margin-top: 15px;">CBSE School </h1>
+
+    <div class="cont">
+        <div class="card">
+            <div class="card-image img1">
+                <video src="maths.mp4" type="video/mp4" loop autoplay loop muted></video>
+            </div>
+            <h1>MATHEMATICS</h1>
+            <p>Class 10 is a momentous year in the life of every student who’s on the threshold of the Board exams. Maths is a pivotal subject in the entire Class 10 curriculum. In this class, students learn to apply several complex mathematical concepts and theories of Algebra, Coordinate Geometry, Statistics & Probability, Mensuration, Number System, Trigonometry, etc. Maths home tuition for Class 10 aims to prepare and help school students who dread the subject and give them a boost to study the subject with enthusiasm.</p>
+            <button onclick="window.location.href='MATHEMATICS1.pdf';">Read More</button>
+        </div>
+        <div class="card">
+            <div class="card-image img2">
+                <video src="science_C.mp4" type="video/mp4" loop autoplay loop muted></video>
+            </div>
+            <h1>SCIENCE</h1>
+            <p>Class 10 board examinations are probably your first attempt at a formal nationwide exam. Not only does scoring well become necessary, but understanding the concepts also becomes equally important as the class 10 Science curriculum lays the foundation for everything you’ll study in your final years of school education, especially if you wish to pursue the field of Science in the coming years.
+                However, scoring in Science can become difficult due to the diversity in topics across Physics, Chemistry, and Biology.</p>
+            <button onclick="window.location.href='SCIENCE1.pdf';">Read More</button>
+        </div>
+
+        <div class="card">
+            <div class="card-image img3">
+                <video src="social.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+            <h1>SOCIAL</h1>
+            <p>Highly trained tutors for Class 10 Social Studies use tools like comprehensive worksheets, and study material such as live quizzes, daily revision, assignments, tests and tuition to help keep students of Class 10 sharp, alert and attentive covering boards such as CBSE . This also helps them understand social concepts with ease and do well in their exams as well. From Class 10 all students read history as a component of Social Sciences. Social Science is an integral component of general education. for more information Go to Read more</p>
+            <button type="button" onclick="window.location.href='SOCIAL_SCIENCE1.pdf';">Read More</button>
+        </div>
+    </div>
+
+    <h1 style="font-size: 30px; color: rgb(236, 236, 236);background-color: #571793; text-align: center;border: 2px solid rgb(17, 10, 10);">State Karnataka
+        Government School </h1>
+    <div class="cont">
+        <div class="card">
+            <div class="card-image img3">
+                <video src="maths.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+            <h1>MATHEMATICS</h1>
+            <p>Karnataka SSLC Board Maths Syllabus for Class 10 is a very helpful tool for students who are appearing for their Board examinations. The KSEEB Class 10 Syllabus for Maths provides an overview of the chapters and topics students are expected learn during the year. Among all the major subjects, students consider Mathematics to be the toughest one as it is all about equations, logic, and theorems.To be master in this subject, students should keep on practising to by heart equations, formulas, theorems, etc.This hekllps the Student to clear exam.</p>
+            <button onclick="window.location.href='MATHEMATICS2.pdf';">Read More</button>
+        </div>
+        <div class="card">
+            <div class="card-image img3">
+                <video src="science.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+            <h1>SCIENCE</h1>
+            <p>Karnataka SSLC Board Science Syllabus for SSLC (Class 10) enables students to get a gist of the course goals with just a glance. This Karnataka Board Class 10 syllabus is a great tool for students to understand the weightage of each chapter. Additionally, it helps them understand the course goals and expectations too.  The subject allows students to explore their world and discover new things. It is also an active subject, containing activities such as hands-on labs and experiments.Science is an important part of the foundation for education for all children.</p>
+            <button onclick="window.location.href='SCIENCE2.pdf';">Read More</button>
+        </div>
+        <div class="card">
+            <div class="card-image img3">
+                <video src="social.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+            <h1>SOCIAL</h1>
+            <p>Karnataka SSLC Syllabus 2022- 23 conveys a clear idea of the course content to the students. Students should have a clear understanding of their respective subject wise syllabus to gain more marks in their exam. Here in this article, we have mentioned Karnataka State Board syllabus of Maths, Science and Social Science. The SSLC Syllabus contains the complete course structure, along with sub-topics under each chapter. Even the textbooks and other reference study materials are developed according to SSLC syllabus for their respective subjects.</p>
+            <button onclick="window.location.href='SOCIAL_SCIENCE2.pdf';">Read More</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
