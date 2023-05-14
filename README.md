@@ -1,7 +1,9 @@
 # Career Guidance Website 
 
 To provide the best, optimal and simple career guidance to students.
+
 ● To fill the void of career mentors.
+
 ● To give clear insight towards their goals for failed students and the students who do not 
 wish to continue their studies after 10th
 
